@@ -12,7 +12,7 @@ var catalogRouter = require('./routes/catalog');  //Import routes for "catalog" 
 
 var app = express();
 var mongoose = require('mongoose');
-var dev_db_url = 'mongodb://localhost:27017/local-library';
+var dev_db_url = 'mongodb+srv://UserDb:mongod@12@cluster0-39nwa.gcp.mongodb.net/test?retryWrites=true&w=majority';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB,{useNewUrlParser:true});
 var db = mongoose.connection;
